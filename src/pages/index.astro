@@ -1,11 +1,33 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Navbar from '../components/Navbar.astro';
+import Carrusel from '../components/Carrusel.astro';
+import BloqueEvento from '../components/BloqueEvento.astro';
+import { eventos } from '../data/eventos.js';
 ---
+<Layout title="Inicio | Reconocimientos">
+  <Navbar />
+  <main class="max-w-7xl mx-auto px-6 py-10">
+    <Carrusel />
+    <h1 class="text-4xl font-extrabold text-center my-20 text-blue-900">Nuestros Eventos</h1>
+    <div class="space-y-16">
+      {eventos.map((e) => <BloqueEvento titulo={e.titulo} descripcion={e.descripcion} fotos={e.fotos} />)}
+    </div>
+  </main>
 
-<Layout>
-	<Welcome />
+  <div id="modal" class="fixed inset-0 z-[100] hidden bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 cursor-pointer" onclick="cerrarModal()">
+    <img id="modal-img" src="" class="max-h-[90vh] max-w-[90vw] rounded-2xl shadow-2xl object-contain" />
+  </div>
+
+  <script is:inline>
+    function abrirModal(src) {
+      document.getElementById('modal-img').src = src;
+      document.getElementById('modal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+    function cerrarModal() {
+      document.getElementById('modal').classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+  </script>
 </Layout>

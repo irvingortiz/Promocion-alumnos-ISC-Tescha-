@@ -1,0 +1,18 @@
+---
+const { titulo, descripcion, fotos } = Astro.props;
+---
+<section class="my-20">
+  <div class="flex items-center gap-4 mb-8">
+    <div class="h-px bg-blue-900 w-12"></div>
+    <h2 class="text-3xl font-extrabold text-blue-900 tracking-tight uppercase">{titulo}</h2>
+  </div>
+  <p class="text-gray-500 mb-10 text-lg italic">{descripcion}</p>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+    {fotos.map((foto) => (
+      <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer border border-gray-100">
+        <img src={foto} alt={titulo} class="w-full h-72 object-cover transform group-hover:scale-105 transition-transform duration-700" onclick={`abrirModal('${foto}')`} />
+        <div class="absolute inset-0 bg-blue-900/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      </div>
+    ))}
+  </div>
+</section>
