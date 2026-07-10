@@ -1,6 +1,11 @@
 import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  integrations: [tailwind()]
+  site: 'https://irvingortiz.github.io',
+  base: '/Promocion-alumnos-ISC-Tescha-/',
+
+  vite: {
+    plugins: [tailwindcss()]
+  }
 });
