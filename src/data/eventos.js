@@ -16,5 +16,15 @@ export const eventos = [
     titulo: "Wolftec",
     descripcion: "Ingeniería en Sistemas Computacionales participó en el “AXOLOTL TOURNAMENT 2026",
     fotos: [`${BASE}fotos/wolftec/1.jpg`, `${BASE}fotos/wolftec/2.jpg`, `${BASE}fotos/wolftec/3.jpg`, `${BASE}fotos/wolftec/4.jpg`]
+  },
+  {
+    titulo: "Proyecto Integrador",
+    descripcion: "En el marco del aprendizaje situado y la vinculación con el sector productivo",
+    fotos: [`${BASE}fotos/integrador/1.jpg`, `${BASE}fotos/integrador/2.jpg`, `${BASE}fotos/integrador/3.jpg`, `${BASE}fotos/integrador/4.jpg`]
+  },
+  {
+    titulo: "Director General",
+    descripcion: "Encuentro con el Director General",
+    fotos: [`${BASE}fotos/director/1.jpg`, `${BASE}fotos/director/2.jpg`]
   }
 ];
