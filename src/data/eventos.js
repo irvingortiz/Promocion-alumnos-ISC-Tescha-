@@ -10,7 +10,7 @@ export const eventos = [
   {
     titulo: "Flisol",
     descripcion: "Festival de software libre.",
-    fotos: [`${BASE}fotos/flisol-2026/1.jpg`, `${BASE}fotos/flisol-2026/2.jpg` , `${BASE}fotos/flisol-2026/3.jpg`, `${BASE}fotos/flisol-2026/4.jpg`, `${BASE}fotos/flisol-2026/5.jpg`, `${BASE}fotos/flisol-2026/6.jpg`, `${BASE}fotos/flisol-2026/7.jpg`, `${BASE}fotos/flisol-2026/8.jpg`, `${BASE}fotos/flisol-2026/9.jpg`, `${BASE}fotos/flisol-2026/10.jpg`, `${BASE}fotos/flisol-2026/11.jpg`, `${BASE}fotos/flisol-2026/12.jpg`]
+    fotos: [`${BASE}fotos/flisol-2026/1.jpg`, `${BASE}fotos/flisol-2026/2.jpg` , `${BASE}fotos/flisol-2026/3.jpg`, `${BASE}fotos/flisol-2026/4.jpg`, `${BASE}fotos/flisol-2026/5.jpg`]
   },
   {
     titulo: "Wolftec",
