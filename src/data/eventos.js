@@ -3,6 +3,15 @@
 const BASE = import.meta.env.BASE_URL;
 export const eventos = [
   {
+  titulo: "Expo Apps 2025-2",
+  descripcion: "Presentación de proyectos en la Expo Apps 2025-2",
+  fotos: [
+    `${BASE}fotos/expoapps-2025-2/1.jpg`,
+    `${BASE}fotos/expoapps-2025-2/2.jpg`,
+    `${BASE}fotos/expoapps-2025-2/3.jpg`
+  ]
+  },
+  {
     titulo: "Innovatec",
     descripcion: "Proyectos de innovación tecnológica.",
     fotos: [`${BASE}fotos/innovatec/1.jpg`, `${BASE}fotos/innovatec/2.jpg`, `${BASE}fotos/innovatec/3.jpg`, `${BASE}fotos/innovatec/4.jpg`, `${BASE}fotos/innovatec/5.jpg`, `${BASE}fotos/innovatec/6.jpg`, `${BASE}fotos/innovatec/7.jpg`]
@@ -21,6 +30,24 @@ export const eventos = [
     titulo: "Proyecto Integrador",
     descripcion: "En el marco del aprendizaje situado y la vinculación con el sector productivo",
     fotos: [`${BASE}fotos/integrador/1.jpg`, `${BASE}fotos/integrador/2.jpg`, `${BASE}fotos/integrador/3.jpg`, `${BASE}fotos/integrador/4.jpg`]
+  },
+  {
+  titulo: "Mundialito",
+  descripcion: "Participación en el Mundialito",
+  fotos: [
+    `${BASE}fotos/mundialito/1.jpg`,
+    `${BASE}fotos/mundialito/2.jpg`
+  ]
+  },
+  {
+  titulo: "Conferencia en la EPO 30",
+  descripcion: "Actividades y concientización sobre la prevención de la violencia",
+  fotos: [
+    `${BASE}fotos/violencia/1.jpg`,
+    `${BASE}fotos/violencia/2.jpg`,
+    `${BASE}fotos/violencia/3.jpg`,
+    `${BASE}fotos/violencia/4.jpg`
+  ]
   },
   {
     titulo: "Director General",
