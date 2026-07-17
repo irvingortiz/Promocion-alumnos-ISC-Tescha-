@@ -6,9 +6,9 @@ export const eventos = [
   titulo: "Expo Apps 2025-2",
   descripcion: "Presentación de proyectos en la Expo Apps 2025-2",
   fotos: [
-    `${BASE}fotos/expoapps-2025-2/1.jpg`,
-    `${BASE}fotos/expoapps-2025-2/2.jpg`,
-    `${BASE}fotos/expoapps-2025-2/3.jpg`
+    `${BASE}fotos/expoapps/1.jpg`,
+    `${BASE}fotos/expoapps/2.jpg`,
+    `${BASE}fotos/expoapps/3.jpg`
   ]
   },
   {
